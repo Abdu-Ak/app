@@ -15,31 +15,55 @@
     <title>AMAZIN</title>
   </head>
   <body>
-<div class="container mt-5">
+    <header>
+      <div class="row d-flex navbar-expand">
+        <nav
+          class="navbar navbar-light justify-content-center"
+          style="background-color:#f56600;"
+        >
+          <div class="logo">
+            <img src="/public/images/logo.png" height="80" width="180" />
+          </div>
+          <div class="container-fluid">
+          </div>
+        </nav>
+      </div>
 
+    </header>
+    <div class="container mt-5" style="width: 30%;">
 
-    <form action="/login" method="post">
-  
-     
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input name="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+      <div class="row">
+        <form
+          action="/login"
+          method="post"
+          class="p-5 border border-dark rounded"
+        >
 
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input
+            name="username"
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
 
-  
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input name="password" type="password" class="form-control" id="exampleInputPassword1">
- 
-  <p>{{invalid}}</p>
-<button type="submit" class="btn btn-primary " >Submit</button>
-</form>
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            name="password"
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
 
+          <p class="text-danger mt-3">{{invalid}}</p>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
-</div>
+    </div>
 
-
-
-
-   <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

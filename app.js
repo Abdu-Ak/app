@@ -30,7 +30,7 @@ app.use(cookieParser());
 //username and password
 const myusername = 'abduak@gmail.com'
 const mypassword = '1425378'
-const invalid= 'Invalid username or password'
+const invalid= 'Invalid username or password !'
 // a variable to save a session
 var session;
 
